@@ -6,12 +6,12 @@ import chalk from "chalk";
 export function createDirectoryTree(
 	dirPath,
 	level = 0,
-	ignore = "node_modules",
+	ignore = ["node_modules", ".git"],
 ) {
 	let tree = "";
 	const files = fs.readdirSync(dirPath, { withFileTypes: true });
 	const dirs = files.filter(
-		(dirent) => dirent.isDirectory() && dirent.name !== ignore,
+		(dirent) => dirent.isDirectory() && !ignore.includes(dirent.name),
 	);
 	const regularFiles = files.filter((dirent) => !dirent.isDirectory());
 
