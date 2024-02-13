@@ -1,0 +1,4 @@
+{
+	"welcome": "Directory tree for {{path}}, ignoring '{{ignore}}':",
+	"current": "Current directory"
+}
