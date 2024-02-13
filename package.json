@@ -1,6 +1,6 @@
 {
 	"name": "dir-tree-cli",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "",
 	"type": "module",
 	"scripts": {
@@ -15,5 +15,9 @@
 	},
 	"bin": {
 		"dir-tree": "./cli.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ChristophHeinemann/dir-tree-cli.git"
 	}
 }
