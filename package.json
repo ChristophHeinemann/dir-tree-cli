@@ -1,8 +1,9 @@
 {
 	"name": "dir-tree-cli",
-	"version": "1.0.7",
-	"description": "",
+	"version": "1.0.8",
+	"description": "A simple CLI tool to print a directory tree",
 	"type": "module",
+	"license": "MIT",
 	"scripts": {
 		"start": "node cli.js"
 	},
