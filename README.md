@@ -1,51 +1,44 @@
-
 # Directory Tree CLI
 
-Das Directory Tree CLI ist ein Node.js-basiertes Kommandozeilen-Tool, das eine grafische Darstellung der Verzeichnisstruktur eines gegebenen Pfades anzeigt. Es unterstützt die Internationalisierung, indem es automatisch die Systemsprache erkennt und entsprechende Übersetzungen verwendet.
+The Directory Tree CLI is a Node.js-based command line tool that displays a graphical representation of the directory structure of a given path. It supports internationalization by automatically detecting the system language and using appropriate translations.
 
 ## Features
 
-- Anzeige der Verzeichnisstruktur mit Unterstützung für die Ausblendung spezifischer Verzeichnisse (z. B. `node_modules`).
-- Automatische Erkennung der Systemsprache und Anzeige der Ausgabe in dieser Sprache.
-- Fallback auf Englisch, falls Übersetzungen für die erkannte Sprache nicht verfügbar sind.
+- Display of the directory structure with support for hiding specific directories (e.g. `node_modules`).
+- Automatic detection of the system language and display of the output in this language.
+- Fallback to English if translations are not available for the recognized language.
 
-## Voraussetzungen
+## Prerequisites
 
-Stellen Sie sicher, dass Node.js und npm auf Ihrem System installiert sind, um das Directory Tree CLI zu verwenden.
+Make sure that Node.js and npm are installed on your system to use the Directory Tree CLI.
 
 ## Installation
 
-Das Tool kann global über npm installiert werden:
+The tool can be installed globally via npm:
 
 ```bash
 npm install -g dir-tree-cli
 ```
 
-## Verwendung
+## Usage
 
-Nach der Installation können Sie das Tool wie folgt verwenden:
-
-```bash
-dir-tree [Pfad] [Ignorieren]
-```
-
-- `[Pfad]` (optional): Der Pfad des Verzeichnisses, dessen Struktur angezeigt werden soll. Standardmäßig wird das aktuelle Verzeichnis verwendet.
-- `[Ignorieren]` (optional): Ein Verzeichnisname, der bei der Anzeige der Verzeichnisstruktur ignoriert werden soll. Standardmäßig wird `node_modules` ignoriert.
-
-Beispiel:
+After installation, you can use the tool as follows:
 
 ```bash
-dir-tree ./meinProjekt
+dir-tree [path] [ignore]
 ```
 
-## Internationalisierung
+- `[path]` (optional): The path of the directory whose structure is to be displayed. The current directory is used by default.
+- `[Ignore]` (optional): A directory name to be ignored when displaying the directory structure. By default, `node_modules` is ignored.
 
-Das Tool erkennt automatisch die Systemsprache und verwendet entsprechende Übersetzungen für die Ausgabe. Aktuell unterstützte Sprachen sind Englisch und Deutsch. Sie können Übersetzungen in der Datei `./locales/{{lng}}/translation.json` hinzufügen oder bearbeiten.
+Example:
 
-## Beitrag
+```bash
+dir-tree ./myproject
+```
 
-Feedback und Beiträge sind herzlich willkommen. Bitte erstellen Sie Issues oder Pull Requests im GitHub-Repository, wenn Sie zur Verbesserung des Tools beitragen möchten.
+## Internationalization
 
-## Lizenz
+The tool automatically recognizes the system language and uses corresponding translations for the output. Currently supported
 
-Das Directory Tree CLI ist unter der MIT-Lizenz veröffentlicht. Details finden Sie in der [LICENSE](LICENSE)-Datei.
+Translated with DeepL.com (free version)
